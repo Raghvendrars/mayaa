@@ -1,0 +1,195 @@
+/* Policies.css */
+.policies-page {
+  background-color: #FAEDD8;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.policies-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 80px);
+}
+
+.policies-box {
+  background: #FAEDD8;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.policies-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.policies-header h1 {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.policies-header p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.policy-section {
+  margin-bottom: 35px;
+}
+
+.policy-section h2 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-intro {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.policy-content {
+  margin-bottom: 15px;
+}
+
+.policy-item {
+  margin-bottom: 20px;
+}
+
+/* Main bullet points */
+.policy-item ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.policy-item li {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  padding-left: 5px;
+}
+
+/* Nested bullet points (for Delivery Timelines) */
+.policy-item ul ul {
+  list-style: circle;
+  padding-left: 20px;
+  margin: 8px 0;
+}
+
+.policy-item ul ul li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.policy-item strong {
+  color: #000;
+  font-weight: 600;
+}
+
+.policy-note {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #000;
+  margin-top: 25px;
+}
+
+.policy-note p {
+  color: #333;
+  font-size: 15px;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.contact-info h3 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  color: #666;
+  font-size: 15px;
+  margin: 0;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .policies-page {
+    padding: 20px 15px;
+  }
+
+  .policies-box {
+    padding: 25px 20px;
+  }
+
+  .policies-header h1 {
+    font-size: 26px;
+  }
+
+  .policy-section h2 {
+    font-size: 20px;
+  }
+
+  .policy-item li,
+  .policy-note p,
+  .contact-info p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .policies-box {
+    padding: 20px 15px;
+  }
+
+  .policies-header h1 {
+    font-size: 24px;
+  }
+
+  .policy-section h2 {
+    font-size: 18px;
+  }
+
+  .policy-item ul {
+    padding-left: 15px;
+  }
+
+  .policy-item ul ul {
+    padding-left: 15px;
+  }
+}

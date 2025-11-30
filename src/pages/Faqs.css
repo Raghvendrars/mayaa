@@ -1,0 +1,135 @@
+/* Faqs.css */
+.faqs-page {
+    background-color: #FAEDD8;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.faqs-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc(100vh - 80px);
+}
+
+.faqs-box {
+    background: #FAEDD8;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.faqs-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+
+.faqs-header h1 {
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.faq-section {
+    margin-bottom: 35px;
+}
+
+.faq-item {
+    margin-bottom: 0;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.faq-item h3 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    flex: 1;
+    line-height: 1.5;
+}
+
+.faq-toggle {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+    flex-shrink: 0;
+}
+
+.faq-answer {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.faq-answer p {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.faq-divider {
+    height: 1px;
+    background-color: #e5e5e5;
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .faqs-page {
+        padding: 20px 15px;
+    }
+
+    .faqs-box {
+        padding: 25px 20px;
+    }
+
+    .faqs-header h1 {
+        font-size: 26px;
+    }
+
+    .faq-item h3 {
+        font-size: 16px;
+    }
+
+    .faq-answer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faqs-box {
+        padding: 20px 15px;
+    }
+
+    .faqs-header h1 {
+        font-size: 24px;
+    }
+
+    .faq-question {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .faq-toggle {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .faq-answer {
+        padding-left: 0;
+    }
+}
