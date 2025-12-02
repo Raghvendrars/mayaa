@@ -1,4 +1,6 @@
+import { useNavigate } from "react-router-dom";
 function Header2() {
+  const navigate = useNavigate();
     return (
       <header className="sticky top-0 z-50 bg-white">
 
@@ -16,9 +18,9 @@ function Header2() {
 
               {/* LEFT MENU */}
               <div className="flex gap-8 items-center">
-                <a className="text-[#EAA25A] font-semibold">Home</a>
-                <a className="text-gray-700 hover:text-[#EAA25A]">Shop</a>
-                <a className="text-gray-700 hover:text-[#EAA25A]">About Us</a>
+                <a className="text-[#EAA25A] font-semibold" href="/">Home</a>
+                <a className="text-gray-700 hover:text-[#EAA25A]" href="shop">Shop</a>
+                <a className="text-gray-700 hover:text-[#EAA25A]" href="/aboutus">About Us</a>
               </div>
 
               {/* CENTER LOGO */}
@@ -76,7 +78,7 @@ function Header2() {
                   </button>
 
                   {/* Cart */}
-                  <button className="w-8 h-8 rounded-full bg-white shadow flex items-center justify-center hover:bg-gray-100 relative">
+                  <button onClick={()=> navigate('/cart')} className="w-8 h-8 rounded-full bg-white shadow flex items-center justify-center hover:bg-gray-100 relative">
                     <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                     </svg>

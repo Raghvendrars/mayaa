@@ -1,82 +1,74 @@
 function Footer() {
-  return (
-    <footer className="relative bg-mayaa-blue text-white overflow-hidden">
-      {/* Moon and Stars Illustration */}
-      <div className="absolute top-8 right-8 text-6xl opacity-20">🌙</div>
-      <div className="absolute top-16 right-16 text-3xl opacity-20">⭐</div>
-      <div className="absolute top-12 right-32 text-2xl opacity-20">✨</div>
+  return (
+    <footer className="relative bg-[#FFE5D4] text-gray-700 overflow-hidden border-t border-[#F5D4BC]">
+      {/* Cloud and Sun Illustration */}
+      <div className="absolute left-0 right-0 top-0 h-32 z-0">
+        <svg viewBox="0 0 1440 120" className="w-full h-full">
+          <path fill="#F5D4BC" d="M0,80 C360,120 720,40 1080,80 C1260,100 1380,60 1440,80 L1440,120 L0,120 Z" />
+        </svg>
+        <div className="absolute left-10 top-10 text-3xl">🌞</div>
+        <div className="absolute right-20 top-16 text-2xl">🌼</div>
+        <div className="absolute left-1/2 top-20 text-2xl">🌤️</div>
+      </div>
 
-      <div className="container mx-auto px-4 py-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <h3 className="text-2xl font-bold mb-4">Mayaa</h3>
-            <p className="text-gray-300">
-              Nurturing creativity and imagination in every child.
-            </p>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4">Shop</h4>
-            <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-white">Collections</a></li>
-              <li><a href="#" className="hover:text-white">New Arrivals</a></li>
-              <li><a href="#" className="hover:text-white">Bestsellers</a></li>
-              <li><a href="#" className="hover:text-white">Gift Cards</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4">About</h4>
-            <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-white">Our Story</a></li>
-              <li><a href="#" className="hover:text-white">Contact Us</a></li>
-              <li><a href="#" className="hover:text-white">FAQs</a></li>
-              <li><a href="#" className="hover:text-white">Shipping</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4">Connect</h4>
-            <div className="flex gap-4">
-              <a href="#" className="text-2xl hover:scale-110 transition-transform">📘</a>
-              <a href="#" className="text-2xl hover:scale-110 transition-transform">📷</a>
-              <a href="#" className="text-2xl hover:scale-110 transition-transform">🐦</a>
-              <a href="#" className="text-2xl hover:scale-110 transition-transform">📌</a>
-            </div>
-          </div>
-        </div>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 py-16">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
+          {/* Logo and Social */}
+          <div className="flex justify-center">
+                <h1 className="text-3xl font-bold relative flex items-center">
+                  <span className="text-[#F28BB2]">माँ</span>
+                  <span className="text-[#9AD09A] ml-1 relative">
+                    yaa
+                    <span className="absolute -top-3 left-0 text-[#EAA25A] text-xs">🦋</span>
+                    <span className="absolute -top-3 left-3 text-[#EAA25A] text-xs">🦋</span>
+                  </span>
+                </h1>
+              </div>
 
-        <div className="border-t border-gray-600 pt-8 text-center text-gray-300">
-          <p>&copy; 2024 Mayaa. All rights reserved.</p>
-        </div>
-      </div>
+          {/* Useful Links */}
+          <div className="md:w-1/4">
+            <h4 className="font-semibold mb-4">Useful Links</h4>
+            <ul className="space-y-2">
+              <li><a href="#" className="hover:text-[#EAA25A]">Contact us</a></li>
+              <li><a href="#" className="hover:text-[#EAA25A]">About Us</a></li>
+              <li><a href="#" className="hover:text-[#EAA25A]">Shipping & Returns</a></li>
+              <li><a href="#" className="hover:text-[#EAA25A]">Refund Policy</a></li>
+            </ul>
+          </div>
 
-      {/* Wave Pattern */}
-      <div className="relative h-24 overflow-hidden">
-        <svg
-          className="absolute bottom-0 w-full h-full"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0,60 C300,100 600,20 900,60 C1050,80 1150,40 1200,60 L1200,120 L0,120 Z"
-            fill="white"
-            opacity="0.3"
-          />
-          <path
-            d="M0,80 C300,120 600,40 900,80 C1050,100 1150,60 1200,80 L1200,120 L0,120 Z"
-            fill="white"
-            opacity="0.5"
-          />
-          <path
-            d="M0,100 C300,140 600,60 900,100 C1050,120 1150,80 1200,100 L1200,120 L0,120 Z"
-            fill="white"
-          />
-        </svg>
-      </div>
-    </footer>
-  )
+          {/* Contact Us */}
+          <div className="md:w-1/4">
+            <h4 className="font-semibold mb-4">Contact Us</h4>
+            <ul className="space-y-2">
+              <li>Nehru nagar, Bangalore-560020</li>
+              <li>Call Us: +91 123 456 789</li>
+              <li>chocolatier@admin.com</li>
+            </ul>
+          </div>
+
+          {/* Delivery */}
+          <div className="md:w-1/4">
+            <h4 className="font-semibold mb-4">Delivery</h4>
+            <ul className="space-y-2">
+              <li>Free Delivery</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="bg-[#B6E2A1] py-3 px-4 text-xs text-gray-700 flex items-center justify-between">
+        <span>&copy; 2023 Mayaa. All Rights Reserved.</span>
+        <div className="flex gap-2">
+          <img src="https://img.icons8.com/color/24/000000/visa.png" alt="Visa" />
+          <img src="https://img.icons8.com/color/24/000000/mastercard.png" alt="Mastercard" />
+          <img src="https://img.icons8.com/color/24/000000/paypal.png" alt="Paypal" />
+          <img src="https://img.icons8.com/color/24/000000/amex.png" alt="Amex" />
+        </div>
+      </div>
+    </footer>
+  )
 }
 
 export default Footer
-
-
-
-
